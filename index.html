@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mocha/Chai/Browser</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="vendor/mocha.css">
 </head>
 <body>
 
-<div id="mocha"></div>
+    <div id="mocha"></div>
 
-<script src="vendor/mocha.js"></script>
-<script src="vendor/chai.js"></script>
+    <script src="vendor/mocha.js"></script>
+    <script src="vendor/chai.js"></script>
 
-<script>
-    var expect = chai.expect;
-    var should = chai.should;
-    mocha.setup('bdd');
-</script>
+    <script>
+        var expect = chai.expect;
+        var should = chai.should();
+        mocha.setup('bdd');
+    </script>
 
-<script src="test/ajax.js"></script>
-<script src="test/clamp.js"></script>
+    <script src="test/ajax.js"></script>
+    <script src="test/clamp.js"></script>
 
-<script>mocha.run();</script>
+    <script>mocha.run();</script>
 
 </body>
 </html>

@@ -17,11 +17,11 @@ function getIP(callback) {
     request.send();
 }
 
-describe('Ajax', function() {
-    describe('JSON', function() {
-        it('should request and parse without error', function(done) {
+describe('Asynchronous Code', function() {
+    describe('#getIPAddress()', function() {
+        it('should get and parse without error', function(done) {
             getIP(function(json) {
-                expect(json).to.have.property('ip');
+                json.should.have.property('ip');
                 done();
             });
         });
